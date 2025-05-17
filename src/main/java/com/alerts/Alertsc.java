@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Alertsc {
 	public static void main(String[] args) {
-		String text="Rahul";
+		String text = "Rahul";
 
 		WebDriver driver = new ChromeDriver();
 
@@ -23,8 +23,6 @@ public class Alertsc {
 		driver.findElement(By.id("confirmbtn")).click();
 //Below will capture text written on alert
 		System.out.println(driver.switchTo().alert().getText());
-
-
 
 		driver.switchTo().alert().dismiss();
 
